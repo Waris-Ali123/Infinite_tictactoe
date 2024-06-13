@@ -134,7 +134,7 @@ function makingLastItemBlur(arr){
         if(divs[i].getAttribute('data-serial')==firstItem.toString()){
 
             let heading =  divs[i].querySelector('h1');
-            heading.style.color = 'red';
+            heading.style.opacity = '0.6';
         }
        }
 
@@ -144,7 +144,7 @@ function makingLastItemBlur(arr){
 function checkForAlreadyOne(element,elementIndex){
     // console.log("checking for already one..!",elementIndex);
     let elementInnerHTML = element.innerHTML;
-    if(elementInnerHTML=="<h1> O </h1>" || elementInnerHTML=="<h1> X </h1>" || elementInnerHTML =='<h1 style="color: red;"> X </h1>' || elementInnerHTML =='<h1 style="color: red;"> O </h1>' ){
+    if(elementInnerHTML=="<h1> O </h1>" || elementInnerHTML=="<h1> X </h1>" || elementInnerHTML =='<h1 style="opacity: 0.6;"> X </h1>' || elementInnerHTML =='<h1 style="opacity: 0.6;"> O </h1>' ){
         return false;
     }
     else{
